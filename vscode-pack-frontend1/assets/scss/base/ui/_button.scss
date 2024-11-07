@@ -1,0 +1,54 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 24px;
+    color: inherit;
+    font-weight: $font-semibold;
+    text-align: center;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: $rounded-md;
+    transition: color .2s, background .2s, border-color .2s;
+    &--primary {
+        border-color: $primary;
+        color: $primary-foreground;
+        background-color: $primary;
+        &:is(:hover, :active) {
+            border-color: hover($primary);
+            color: $primary-foreground;
+            background-color: hover($primary);
+        }
+    }
+    &--secondary {
+        border-color: $secondary;
+        color: $secondary-foreground;
+        background-color: $secondary;
+        &:is(:hover, :active) {
+            border-color: hover($secondary);
+            color: $secondary-foreground;
+            background-color: hover($secondary);
+        }
+    }
+    &--ghost {
+        border-color: $secondary;
+        color: $secondary-foreground;
+        background-color: $secondary;
+        &:is(:hover, :active) {
+            border-color: hover($secondary);
+            color: $secondary-foreground;
+            background-color: hover($secondary);
+        }
+    }
+    &--outline {
+        border-color: $primary;
+        color: $primary-foreground;
+        background-color: transparent;
+        &:is(:hover, :active) {
+            border-color: hover($primary);
+            color: $secondary-foreground;
+            background-color: hover($secondary);
+        }
+    }
+}

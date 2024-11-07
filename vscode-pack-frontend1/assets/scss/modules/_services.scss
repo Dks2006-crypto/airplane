@@ -1,0 +1,54 @@
+.services{
+    width: 100%;
+    padding-bottom: 130px;
+    &__content{
+        &-title{
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        &-cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            @include tablet{
+                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include small-tablet{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 25px;
+            }
+        }
+        &-card{
+            max-width: 500;
+            padding: 38px;
+            display: flex;
+            flex-direction: column;
+            background-color: #DEDEDE;
+            border-radius: 102px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 10px 7px 4px #000000;
+            @include small-tablet{
+                width: 100%;   
+            }
+            &-title{
+                font-size: 36px;
+                color: black;
+                padding-bottom: 50px;
+            }
+            &-text{
+                padding-top: 50px;
+                text-align: center;
+                font-size: 28px;
+                @include tablet{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

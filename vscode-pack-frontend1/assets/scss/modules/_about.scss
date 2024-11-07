@@ -1,0 +1,51 @@
+.about{
+    &__container{
+        width: 100%;
+    }
+    padding-bottom: 130px;
+    &__title{
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 60px;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 90px;
+        @include tablet{
+            gap: 20px;
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include small-tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__card{
+        width: 100%;
+        max-width: 475px;
+        background-color: #002238;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 36px;
+        padding: 30px;
+        border-radius: 102px;
+        box-shadow: 10px 15px 4px #006788;
+        @include tablet{
+            font-size: 28px;
+        }
+        @include mobile{
+            font-size: 24px;
+        }
+        &-icon{
+            width: 152px;
+            height: 152px;
+        }
+    }
+}

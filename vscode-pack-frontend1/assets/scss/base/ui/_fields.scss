@@ -1,0 +1,45 @@
+@mixin form-group {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+    &:not(:last-child) {
+        margin-block-start: $gap;
+    }
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+@mixin form-item {
+    flex: 1;
+    width: 100%;
+}
+
+@mixin label($size: 14px, $color: black) {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: $color;
+    font-weight: $font-medium;
+    margin-block-end: 4px;
+}
+
+@mixin input($height: 45px) {
+    width: 100%;
+    height: $height;
+    padding-inline: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border;
+    color: $input-foreground;
+    background-color: $input;
+    border-radius: $rounded-md;
+    transition: border-color .2s, backgrond-color .2s, color .2s;
+    &:is(:hover, :focus) {
+        border-color: $ring;
+    }
+}
+
+@mixin textarea {
+
+}

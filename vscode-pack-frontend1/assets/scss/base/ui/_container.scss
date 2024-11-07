@@ -1,0 +1,11 @@
+.container {
+    max-width: $container-width;
+    padding-inline: $container-offset;
+    margin-inline: auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+    padding-inline: $container-offset;
+    margin-inline: auto;
+}

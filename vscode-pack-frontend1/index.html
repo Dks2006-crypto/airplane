@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSCode Pack</title>
+    <!-- Meta -->
+    <meta name="title" content="Тестовое название сайта">
+    <meta name="description" content="Тестовое описание сайта">
+    <meta name="keywords" content="Тестовые ключевые слова">
+    <meta name="theme-color" content="#317EFB" />
+    <meta property="og:title" content="Заголовок страницы" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/page.html" />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta property="og:description" content="Описание страницы, которое будет отображаться в социальных сетях." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Заголовок страницы" />
+    <meta name="twitter:description" content="Описание страницы" />
+    <meta name="twitter:image" content="https://example.com/image.jpg" />
+    <meta name="language" content="ru" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="author" content="Автор проекта">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicons/favicon.svg">
+    <!-- Styles vendor -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!-- Styles main -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body class="layout" id="root" data-body>
+    <div class="page-wrapper">
+        <header class="header" id="header" data-header>
+            <div class="header__btn-up header__btn-up--hide"></div>
+            <div class="container header__container">
+                <div class="header__nav-logo"><img src="/assets/img/logoSky2.svg" alt="" class="header__nav-logo-image">
+                </div>
+                <div class="header__nav" id="nav">
+                    <menu class="header__nav-menu">
+                        <li class="header__nav-menu-item">
+                            <a href="" class="header__nav-menu-link">Главная</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="" class="header__nav-menu-link">О нас</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="" class="header__nav-menu-link">Рейсы и расписание</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="" class="header__nav-menu-link">Услуги и Классы</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="" class="header__nav-menu-link">Новости и акции</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="" class="header__nav-menu-link">Отзывы</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="" class="header__nav-menu-link">Контакты</a>
+                        </li>
+                    </menu>
+                </div>
+                <button class="button header__button" id="open">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </header>
+        <main class="main" id="main" data-main>
+            <div class="main-content" id="main-content">
+                <section class="main__section home">
+                    <div class="container home__container">
+                        <div class="home__description">
+                            <h1 class="home__description-title">SkyWings <br> Airlines</h1>
+                            <p class="home__description-text">Лучшая авиакомпания в России <br> Летайте с комфортом и
+                                выгодой!</p>
+                            <a href="!#" class="home__description-link">Купить билет</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section about">
+                    <div class="container about__container">
+                        <h2 class="about__title">О нас</h2>
+                        <div class="about__cards">
+                            <div class="about__card">
+                                <img src="/assets/img/Frame.png" alt="" class="about__card-icon">
+                                <p class="about__Card-text">Авиакомпания ”SkyWings” предланает своим пассажирам высокий
+                                    уровень комфорта и безопасости</p>
+                            </div>
+                            <div class="about__card">
+                                <img src="/assets/img/Frame1.png" alt="" class="about__card-icon">
+                                <p class="about__Card-text">Наша компания уделяет особое внимание качеству обслуживания
+                                    и удобству пассажиров</p>
+                            </div>
+                            <div class="about__card">
+                                <img src="/assets/img/Frame2.png" alt="" class="about__card-icon">
+                                <p class="about__Card-text">Мы стремимся к тому, чтобы каждый полет был приятным и
+                                    запоминающимся</p>
+                            </div>
+                            <div class="about__card">
+                                <img src="/assets/img/icons8-миссия-100.png" alt="" class="about__card-icon">
+                                <p class="about__Card-text">Миссия Группы «SkyWings»:
+                                    Мы работаем для того, чтобы наши клиенты могли быстро и с комфортом преодолевать
+                                    огромные расстояния, а значит – чаще встречаться</p>
+                            </div>
+                            <div class="about__card">
+                                <img src="/assets/img/icons8-история-100.png" alt="" class="about__card-icon">
+                                <p class="about__Card-text">История авиакомпании «SkyWings» охватывает целый век
+                                    развития и инноваций в гражданской авиации</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section flight">
+                    <div class="container flight__container">
+                        <h2 class="flight__title">Рейсы и расписание</h2>
+                        <div class="flight__content">
+                            <div class="flight__content-general">
+                                <div class="flight__content-general-titles">
+                                    <p class="flight__content-general-title">Время</p>
+                                    <p class="flight__content-general-title">Направление</p>
+                                    <p class="flight__content-general-title">Время полета</p>
+                                </div>
+                                <div class="flight__content-info">
+                                    <p class="flight__content-info-time">10.11.2024 <br> 12:22</p>
+                                    <p class="flight__content-info-direction">Волгоград - Москва</p>
+                                    <p class="flight__content-info-time">7ч.</p>
+                                </div>
+                                <div class="flight__content-info">
+                                    <p class="flight__content-info-time">10.11.2024 <br> 12:22</p>
+                                    <p class="flight__content-info-direction">Волгоград - Москва</p>
+                                    <p class="flight__content-info-time">7ч.</p>
+                                </div>
+                                <div class="flight__content-info">
+                                    <p class="flight__content-info-time">10.11.2024 <br> 12:22</p>
+                                    <p class="flight__content-info-direction">Волгоград - Москва</p>
+                                    <p class="flight__content-info-time">7ч.</p>
+                                </div>
+                                <div class="flight__content-info">
+                                    <p class="flight__content-info-time">10.11.2024 <br> 12:22</p>
+                                    <p class="flight__content-info-direction">Волгоград - Москва</p>
+                                    <p class="flight__content-info-time">7ч.</p>
+                                </div>
+                                <div class="flight__content-info">
+                                    <p class="flight__content-info-time">10.11.2024 <br> 12:22</p>
+                                    <p class="flight__content-info-direction">Волгоград - Москва</p>
+                                    <p class="flight__content-info-time">7ч.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section services">
+                    <div class="container services__container">
+                        <div class="services__content">
+                            <h2 class="services__content-title">Услуги и Классы</h2>
+                            <div class="services__content-cards">
+                                <div class="services__content-card">
+                                    <h3 class="services__content-card-title">Эконом-класс</h3>
+                                    <img src="/assets/img/image 1.png" alt="" class="services__content-card-image">
+                                    <p class="services__content-card-text">Самый доступный и популярный класс
+                                        обслуживания</p>
+                                </div>
+                                <div class="services__content-card">
+                                    <h3 class="services__content-card-title">Комфорт-класс</h3>
+                                    <img src="/assets/img/image 2.png" alt="" class="services__content-card-image">
+                                    <p class="services__content-card-text">Премиум-эконом класс, расположенный между
+                                        экономом и бизнес-классом</p>
+                                </div>
+                                <div class="services__content-card">
+                                    <h3 class="services__content-card-title">Бизнес-класс</h3>
+                                    <img src="/assets/img/65607e0d9c7d23cb3b9f5111 1.png" alt=""
+                                        class="services__content-card-image">
+                                    <p class="services__content-card-text"> Высокий уровень сервиса и комфорта</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section news">
+                    <div class="container news__container">
+                        <div class="news__content">
+                            <h2 class="news__content-title">Акции</h2>
+                            <div class="news__content-cards">
+                                <div class="news__content-card">
+                                    <img src="/assets/img/portrait-flight-attendant-with-luggage 1.png" alt=""
+                                        class="news__content-card-image">
+                                    <p class="news__content-card-date">05.11.2024-05.02.2025</p>
+                                    <hr style="width: 100%;height: 2px;background: #000;">
+                                    <p class="news__content-card-text">В честь Нового Года мы предлагаем специальные
+                                        скидки на все авиабилеты.</p>
+                                </div>
+                                <div class="news__content-card">
+                                    <img src="/assets/img/portrait-flight-attendant-waving 1.png" alt=""
+                                        class="news__content-card-image">
+                                    <p class="news__content-card-date">05.11.2024-30.12.2024</p>
+                                    <hr style="width: 100%;height: 2px;background: #000;">
+                                    <p class="news__content-card-text">Забронируйте билеты заранее и сэкономьте до 15%
+                                        на перелеты в Минск.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section stocks">
+                    <div class="container stocks__container">
+                        <div class="stocks__content">
+                            <h2 class="stocks__content-title">Новости</h2>
+                            <div class="stocks__content-cards">
+                                <div class="stocks__content-card">
+                                    <img src="/assets/img/515fbebd1f04e0f660732dc84918067a 1.png" alt=""
+                                        class="stocks__content-card-image">
+                                    <p class="stocks__content-card-date">13:15 12.11.2024 - 14:15 12.11.2024</p>
+                                    <hr style="width: 100%;height: 2px;background: #000;">
+                                    <p class="stocks__content-card-text">Рейс Волгоград - Москва (SU-46) задерживается
+                                        из-за сильного снегопада</p>
+                                </div>
+                                <div class="stocks__content-card">
+                                    <img src="/assets/img/d36a7aa909533fadca775a8461bb6022 1.png" alt=""
+                                        class="stocks__content-card-image">
+                                    <p class="stocks__content-card-date">12.11.2024</p>
+                                    <hr style="width: 100%;height: 2px;background: #000;">
+                                    <p class="stocks__content-card-text">3 сентября — авиакомпании в России начнут
+                                        наказывать за нарушения правил перевозки ручной клади.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="swiper mySwiper" id="banner">
+                    <h2 class="swiper-wrapper__title">Отзывы</h2>
+                    <div class="swiper-wrapper container">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-card">
+                                <p class="swiper-slide-card-info">«SkyWings Airlines», рейс DP537, Волгоград —
+                                    Москва, вылет 13.09 в 8:15</p>
+                                <img src="/assets/img/Male User.png" alt="" class="swiper-slide-card-image">
+                                <p class="swiper-slide-card-name">Елизавета Тихоновна</p>
+                                <p class="swiper-slide-card-date">13.09.2024</p>
+                                <hr style="width: 100%;height: 2px;background: #000;">
+                                <p class="swiper-slide-card-text">Недавно летала с SkyWings и осталась очень
+                                    довольна. Персонал был дружелюбным и профессиональным, регистрация и посадка
+                                    прошли быстро и без проблем.
+                                    Кресла на борту были удобными, обслуживание на высоком уровне, а еда вкусная.
+                                    Развлечения на борту также порадовали.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-card">
+                                <p class="swiper-slide-card-info">«SkyWings Airlines», рейс DP537, Волгоград —
+                                    Москва, вылет 13.09 в 8:15</p>
+                                <img src="/assets/img/Male User.png" alt="" class="swiper-slide-card-image">
+                                <p class="swiper-slide-card-name">Михаил Константинович</p>
+                                <p class="swiper-slide-card-date">17.10.2024</p>
+                                <hr style="width: 100%;height: 2px;background: #000;">
+                                <p class="swiper-slide-card-text">Недавно я воспользовался услугами SkyWings и
+                                    остался в полном восторге! Персонал был невероятно дружелюбным и
+                                    профессиональным, начиная с регистрации и заканчивая посадкой. Все процедуры
+                                    прошли быстро и без задержек.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-card">
+                                <p class="swiper-slide-card-info">«SkyWings Airlines», рейс DP537, Волгоград —
+                                    Москва, вылет 13.09 в 8:15</p>
+                                <img src="/assets/img/Male User.png" alt="" class="swiper-slide-card-image">
+                                <p class="swiper-slide-card-name">Лев Тихонович</p>
+                                <p class="swiper-slide-card-date">12.12.2024</p>
+                                <hr style="width: 100%;height: 2px;background: #000;">
+                                <p class="swiper-slide-card-text">Комфорт на борту был на высшем уровне. Чистые
+                                    и удобные кресла, качественное обслуживание и вкусная еда сделали полет
+                                    максимально приятным. Особенно порадовала свежая и вкусная еда, а также широкий
+                                    выбор развлечений на борту.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <p class="reviews__content-end">Ваше мнение очень важно для нас!</p>
+                </section>
+                <section class="main__section contacts">
+                    <div class="container contacts__container">
+                        <div class="contacts__content">
+                            <h2 class="contacts__content-title">Контакты</h2>
+                            <div class="contacts__content-cards">
+                                <div class="contacts__content-card">
+                                    <img src="/assets/img/Headset.png" alt="" class="contacts__content-card-image">
+                                    <h3 class="contacts__content-card-title">Колл-центр</h3>
+                                    <hr style="width: 100%;height: 2px;background: #000;">
+                                    <ul class="contacts__content-card-list">
+                                        <li class="contacts__content-card-list-item">
+                                            Звонок платный
+                                        </li>
+                                        <li class="contacts__content-card-list-item">
+                                            За одну минуту от 69 ₽ до 70,83 ₽ без НДС, включая время ожидания разговора
+                                            с оператором, в зависимости от региона и оператора связи
+                                        </li>
+                                        <li class="contacts__content-card-list-item">
+                                            Соединение возможно при наличии доступа к платным линиям (в большинстве
+                                            случаев такой доступ отключен для служебных (корпоративных) номеров, а также
+                                            для абонентов Yota)
+                                        </li>
+                                        <li class="contacts__content-card-list-item">
+                                            Круглосуточно, без выходных
+                                        </li>
+                                    </ul>
+                                    <a href="#!" class="contacts__content-card-link">Позвонить</a>
+                                </div>
+                                <div class="contacts__content-card">
+                                    <img src="/assets/img/Message Bot.png" alt="" class="contacts__content-card-image">
+                                    <h3 class="contacts__content-card-title">Чат-бот</h3>
+                                    <hr style="width: 100%;height: 2px;background: #000;">
+                                    <p class="contacts__content-card-text">Задайте вопрос текстом или голосом, бот Витя
+                                        предоставит наиболее точную и актуальную информацию. Если вы хотите узнать
+                                        подробнее о регистрации, правилах перевозки ручной клади и багажа или других
+                                        наших услугах, просто спросите его.</p>
+                                    <a href="#!" class="contacts__content-card-link">Написать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section partners">
+                    <div class="container partners__container">
+                        <div class="partners__content">
+                            <h2 class="partners__content-title">Партнеры</h2>
+                            <div class="partners__content-company">
+                                <img src="/assets/img/Cathay-Pacific-Logo-SVG_002 1.png" alt=""
+                                    class="partners__content-company-image">
+                                <img src="/assets/img/Finnair-Logo 1.png" alt=""
+                                    class="partners__content-company-image">
+                                <img src="/assets/img/japan-airlines@logotyp.us 1.png" alt=""
+                                    class="partners__content-company-image">
+                                <img src="/assets/img/malaysia-airlines@logotyp.us 1.png" alt=""
+                                    class="partners__content-company-image">
+                                <img src="/assets/img/Qatar-Airways-Logo 1.png" alt=""
+                                    class="partners__content-company-image">
+                                <img src="/assets/img/royal-air-maroc-seeklogo 1.png" alt=""
+                                    class="partners__content-company-image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer" id="footer" data-footer>
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <h2 class="footer__content-title">SkyWings Airlines</h2>
+                    <div class="footer__content-nav">
+                        <menu class="footer__content-nav-menu">
+                            <li class="footer__content-nav-menu-item">
+                                <a href="" class="footer__content-nav-menu-link">Главная</a>
+                            </li>
+                            <li class="footer__content-nav-menu-item">
+                                <a href="" class="footer__content-nav-menu-link">О нас</a>
+                            </li>
+                            <li class="footer__content-nav-menu-item">
+                                <a href="" class="footer__content-nav-menu-link">Рейсы и расписание</a>
+                            </li>
+                            <li class="footer__content-nav-menu-item">
+                                <a href="" class="footer__content-nav-menu-link">Услуги и Классы</a>
+                            </li>
+                            <li class="footer__content-nav-menu-item">
+                                <a href="" class="footer__content-nav-menu-link">Новости и акции</a>
+                            </li>
+                            <li class="footer__content-nav-menu-item">
+                                <a href="" class="footer__content-nav-menu-link">Отзывы</a>
+                            </li>
+                            <li class="footer__content-nav-menu-item">
+                                <a href="" class="footer__content-nav-menu-link">Контакты</a>
+                            </li>
+                        </menu>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <p class="footer__social-text">Социальные сети:</p>
+                    <div class="footer__social-icons">
+                        <a href="https://vk.com/" class="footer__social-icon-link"><img src="/assets/img/VK com.png"
+                                alt="" class="footer__social-icon"></a>
+                        <a href="http://facebook.com.vn" class="footer__social-icon-link"><img
+                                src="/assets/img/Facebook.png" alt="" class="footer__social-icon"></a>
+                        <a href="https://www.youtube.com/" class="footer__social-icon-link"><img
+                                src="/assets/img/YouTube Logo.png" alt="" class="footer__social-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scripts vendor -->
+    <script src="./assets/javascript/vendor/swiper-bundle.min.js"></script>
+    <script src="./assets/javascript/vendor/imask.min.js"></script>
+    <!-- Scripts main -->
+    <script type="module" src="./assets/javascript/app.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
+
+</html>

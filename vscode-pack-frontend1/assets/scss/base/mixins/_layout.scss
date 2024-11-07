@@ -1,0 +1,124 @@
+@mixin grid($columns, $gap: $gap) {
+    @if $columns == 12 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: $gap;
+        @include tablet {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        @include small-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    } @else if $columns == 10 {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: $gap;
+        @include tablet {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        @include small-tablet {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    } @else if $columns == 8 {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: $gap;
+        @include tablet {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        @include small-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    } @else if $columns == 6 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: $gap;
+        @include tablet {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include small-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    } @else if $columns == 4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: $gap;
+        @include small-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    } @else if $columns == 2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $gap;
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}
+
+@mixin flex-row($type, $gap: $gap) {
+    @if $type == center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $gap;
+    } @else if $type == between {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $gap;
+    } @else if $type == start {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: $gap;
+    } @else if $type == end {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: $gap;
+    }
+}
+
+@mixin flex-col($type, $gap: $gap) {
+    @if $type == center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: $gap;
+    } @else if $type == between {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: $gap;
+    } @else if $type == start {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: $gap;
+    } @else if $type == end {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: $gap;
+    }
+}

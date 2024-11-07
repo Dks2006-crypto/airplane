@@ -1,0 +1,24 @@
+{
+	"Create form": {
+		"prefix": "full-form",
+		"body": [
+			"<form action=\"#!\" class=\"$1__form $1__form--form\" method=\"POST\">",
+    "	<div class=\"$1__form-group $1__form-group--group\">",
+    "		<div class=\"$1__form-item $1__form-item--item\">",
+    "			<input aria-label=\"Введите текст\" type=\"text\" class=\"$1__form-input $1__form-input--field\" placeholder=\"Введите текст\" />",
+    "		</div>",
+    "		<div class=\"$1__form-item $1__form-item--item\">",
+    "		    <input aria-label=\"Введите текст\" type=\"text\" class=\"$1__form-input $1__form-input--field\" placeholder=\"Введите текст\" />",
+    "		</div>",
+    "	</div>",
+    "	<div class=\"$1__form-item $1__form-item--item\">",
+    "		<div class=\"$1__form-item $1__form-item--item\">",
+    "			<button aria-label=\"Отправить\" class=\"$1__button button button--primary\">Отправить</button>",
+    "		</div>",
+    "	</div>",
+			"</form>",
+			""
+		],
+		"description": "Create form"
+	}
+}

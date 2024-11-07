@@ -1,0 +1,30 @@
+{
+	"Button-primary": {
+		"prefix": "btn-primary",
+		"body": [
+			"<button class=\"$1 button button--primary\">$2</button>"
+		],
+		"description": "Button-primary"
+	},
+	"Button-secondary": {
+		"prefix": "btn-secondary",
+		"body": [
+			"<button class=\"$1 button button--secondary\">$2</button>"
+		],
+		"description": "Button-secondary"
+	},
+	"Button-ghost": {
+		"prefix": "btn-ghost",
+		"body": [
+			"<button class=\"$1 button button--ghost\">$2</button>"
+		],
+		"description": "Button-ghost"
+	},
+	"Button-outline": {
+		"prefix": "btn-outline",
+		"body": [
+			"<button class=\"$1 button button--outline\">$2</button>"
+		],
+		"description": "Button-outline"
+	},
+}

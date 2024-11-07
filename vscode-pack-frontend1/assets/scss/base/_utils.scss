@@ -1,0 +1,5 @@
+@function hover($color) {
+    $lightness: lightness($color);
+    $new-lightness: $lightness - 10%;
+    @return hsl(hue($color), saturation($color), $new-lightness);
+}
